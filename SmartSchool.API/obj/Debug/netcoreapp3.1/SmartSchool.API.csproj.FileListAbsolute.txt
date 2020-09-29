@@ -274,5 +274,16 @@ C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartScho
 C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\obj\Debug\netcoreapp3.1\SmartSchool.API.genruntimeconfig.cache
 C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\bin\Debug\netcoreapp3.1\SmartSchool.API.xml
 C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\obj\Debug\netcoreapp3.1\SmartSchool.API.csproj.CoreCompileInputs.cache
+C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\obj\Debug\netcoreapp3.1\SmartSchool.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\obj\Debug\netcoreapp3.1\SmartSchool.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\bin\Debug\netcoreapp3.1\Swashbuckle.Core.dll
+C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\User PC\Desktop\Arquivos\alura\projetoAPI\SmartSchool - Copia\SmartSchool.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll

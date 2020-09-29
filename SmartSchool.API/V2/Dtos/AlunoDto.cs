@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SmartSchool.API.Dtos
+namespace SmartSchool.API.V2.Dtos
 {
     public class AlunoDto
     {
+     
+
+        /// <summary>
+        /// Id do aluno e chave do banco
+        /// </summary>
         public int Id { get; set; }
+        /// <summary>
+        /// Matricula do aluno para utilizar em outras acoes
+        /// </summary>
         public int Matricula { get; set; }
         public string Nome { get; set; }
         public string Telefone { get; set; }

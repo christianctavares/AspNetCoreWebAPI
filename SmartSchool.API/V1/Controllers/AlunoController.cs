@@ -7,12 +7,19 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SmartSchool.API.Data;
-using SmartSchool.API.Dtos;
+using SmartSchool.API.V1.Dtos;
 using SmartSchool.API.Models;
+using SmartSchool.API.Helpers;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace SmartSchool.API.Controllers
+namespace SmartSchool.API.V1.Controllers
 {
-    [Route("api/[controller]")]
+    /// <summary>
+    /// Versao 1 do meu controlador de alunos
+    /// </summary>
+    /// 
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("1.0")]
     [ApiController]
     public class AlunoController : ControllerBase
     {
@@ -20,20 +27,36 @@ namespace SmartSchool.API.Controllers
         private readonly IRepository _repo;
         private readonly IMapper _mapper;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="repo"></param>
+        /// <param name="mapper"></param>
         public AlunoController(IRepository repo, IMapper mapper)
         {
             _repo = repo;
             _mapper = mapper;
         }
 
+        /// <summary>
+        /// Metodo que retorna todos os meus alunos
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get([FromQuery]PageParams pageParams)
         {
-            var alunos = _repo.GetAllAlunos(true);
-            
-            return Ok(_mapper.Map<IEnumerable<AlunoDto>>(alunos));
+            var alunos = await _repo.GetAllAlunosAsync(pageParams, true);
+            var alunosResult = _mapper.Map<IEnumerable<AlunoDto>>(alunos);
+
+            Response.AddPagination(alunos.CurrentPage, alunos.PageSize, alunos.TotalCount, alunos.TotalPages);
+
+            return Ok(alunosResult);
         }
 
+        /// <summary>
+        /// metodo que retorna um unico alunoDTO
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("getRegister")]
         public IActionResult GetRegister()
         {
@@ -41,6 +64,11 @@ namespace SmartSchool.API.Controllers
         }
 
 
+        /// <summary>
+        /// metodo que retorna um unico aluno por  meido do id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("byId/{id}")]
         public IActionResult GetById(int id)
         {
